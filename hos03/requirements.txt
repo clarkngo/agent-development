@@ -1,0 +1,2 @@
+google-adk[database]==1.6.1
+litellm==1.74.3
