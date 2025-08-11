@@ -16,7 +16,7 @@ model = LiteLlm(
 def get_dad_joke():
     jokes =[
         "Why don't skeletons fight each other? They don't have the guts.",
-        "I used to play piano by ear, but now I use my hands.",
+        "I used to play piano by ear,    but now I use my hands.",
         "Why did the scarecrow win an award? Because he was outstanding in his field.",
     ]
     return random.choice(jokes)
