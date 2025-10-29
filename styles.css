@@ -27,6 +27,10 @@ body{
 .site-header .container{display:flex;align-items:center;justify-content:space-between}
 .header-actions a{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--text);text-decoration:none;border:1px solid rgba(255,255,255,0.03);font-weight:600}
 .header-actions a:hover{background:rgba(255,255,255,0.04)}
+
+/* small GitHub link badge used next to folder entries */
+.gh-badge{display:inline-block;margin-left:8px;padding:4px 8px;border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.03);font-size:12px;color:var(--text);text-decoration:none}
+.gh-badge:hover{background:rgba(255,255,255,0.05)}
 .brand{
     display:flex;align-items:center;gap:12px
 }
