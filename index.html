@@ -4,46 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agent Engineering — Home</title>
+    <link rel="icon" href="robot.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="robot.svg">
+    <meta name="theme-color" content="#2b2b2b">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Agent Engineering</h1>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <img src="robot.svg" alt="robot logo">
+                <div>
+                    <h1 class="title">Agent Engineering</h1>
+                    <p class="subtitle">Repository index — examples, experiments and reference agents</p>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <p>Welcome — this is the home page. The site contains generated pages for each top-level folder in the repository (except where excluded by the rules below).</p>
+    <main class="container">
+        <div class="grid">
+            <div>
+                <section class="card">
+                    <h2>Pages</h2>
+                    <p class="muted">Landing pages created for top-level folders (excluding projects/archive/reference).</p>
+                    <ul class="clean links">
+                        <li><a href="hos01.html">hos01</a> <span class="muted">— greeting & simple examples</span></li>
+                        <li><a href="hos02.html">hos02</a> <span class="muted">— tool integration demo</span></li>
+                        <li><a href="hos03.html">hos03</a> <span class="muted">— lightweight LLM examples</span></li>
+                        <li><a href="hos04.html">hos04</a> <span class="muted">— structured outputs & schemas</span></li>
+                        <li><a href="hos05.html">hos05</a> <span class="muted">— sessions and statefulness</span></li>
+                        <li><a href="hos06.html">hos06</a> <span class="muted">— persistent storage patterns</span></li>
+                        <li><a href="hos07.html">hos07</a> <span class="muted">— multi-agent coordination</span></li>
+                        <li><a href="hos08.html">hos08</a> <span class="muted">— stateful multi-agent workflows</span></li>
+                        <li><a href="hos09.html">hos09</a> <span class="muted">— callbacks and event hooks</span></li>
+                        <li><a href="hos10.html">hos10</a> <span class="muted">— sequential pipeline example</span></li>
+                        <li><a href="hos11.html">hos11</a> <span class="muted">— parallel orchestration</span></li>
+                        <li><a href="hos12.html">hos12</a> <span class="muted">— looping & retry patterns</span></li>
+                        <li><a href="movie-app-react-adk.html">movie-app-react-adk</a> <span class="muted">— fullstack React + ADK demo</span></li>
+                    </ul>
+                </section>
 
-        <section>
-            <h2>Pages</h2>
-            <ul>
-                <li><a href="hos01.html">hos01</a></li>
-                <li><a href="hos02.html">hos02</a></li>
-                <li><a href="hos03.html">hos03</a></li>
-                <li><a href="hos04.html">hos04</a></li>
-                <li><a href="hos05.html">hos05</a></li>
-                <li><a href="hos06.html">hos06</a></li>
-                <li><a href="hos07.html">hos07</a></li>
-                <li><a href="hos08.html">hos08</a></li>
-                <li><a href="hos09.html">hos09</a></li>
-                <li><a href="hos10.html">hos10</a></li>
-                <li><a href="hos11.html">hos11</a></li>
-                <li><a href="hos12.html">hos12</a></li>
-                <li><a href="movie-app-react-adk.html">movie-app-react-adk</a></li>
-            </ul>
-        </section>
+                <section class="card" style="margin-top:16px">
+                    <h2>Projects overview</h2>
+                    <p>This repository holds example agents, demos, and experiments. Use the links below to navigate to landing pages or the raw folders.</p>
+                    <ul class="projects-list clean">
+                        <li><a href="movie-app-react-adk.html">movie-app-react-adk</a> <span class="muted">— fullstack demo (React + ADK)</span></li>
+                        <li><a href="reference/">reference/</a> <span class="muted">— canonical ADK samples and larger demos</span></li>
+                        <li><a href="projects/">projects/</a> <span class="muted">— active user projects (not auto-indexed)</span></li>
+                        <li><a href="archive/">archive/</a> <span class="muted">— historical experiments and artifacts</span></li>
+                    </ul>
+                    <p class="muted" style="margin-top:12px">Tip: tell me which projects you want highlighted and I can pin them to the top of this page.</p>
+                </section>
 
-        <section>
-            <h2>Rules</h2>
-            <p>Automatic page-generation rules (applied to this repository):</p>
-            <ol>
-                <li>Create one HTML page at the repository root for every top-level directory.</li>
-                <li>Do NOT create pages for the following top-level directories: <code>projects</code>, <code>archive</code>, and <code>reference</code>.</li>
-                <li>Also exclude hidden directories and environment folders (names starting with a dot such as <code>.git</code> and common virtual environment folders like <code>.venv</code>).</li>
-                <li><strong>index.html</strong> remains the single home page and should not be replaced by other content.</li>
-            </ol>
-            <p>These rules are embedded here to make the site's behavior explicit. The other pages are simple folder landing pages linking back to this home page.</p>
-        </section>
+                <section class="card" style="margin-top:16px">
+                    <h2>Reference Projects</h2>
+                    <p class="muted">A curated list of reference implementations and example agents. Click any entry to open the project folder.</p>
+                    <ul class="clean reference-list">
+                        <li><a href="reference/gemini-fullstack/">gemini-fullstack</a> — Fullstack ADK quickstart (React + FastAPI)</li>
+                        <li><a href="reference/customer-service/">customer-service</a> — Conversational retail assistant demo</li>
+                        <li><a href="reference/data-science/">data-science</a> — Multi-agent data analysis workflows</li>
+                        <li><a href="reference/marketing-agency/">marketing-agency</a> — Multi-agent marketing & site generation</li>
+                        <li><a href="reference/short-movie-agents/">short-movie-agents</a> — Video creation pipeline examples</li>
+                        <li><a href="reference/llm-auditor/">llm-auditor</a> — Audit and claim-verification patterns</li>
+                        <li><a href="reference/software-bug-assistant/">software-bug-assistant</a> — Debugging & triage agent</li>
+                        <li><a href="reference/travel-concierge/">travel-concierge</a> — Planner & in-trip concierge agents</li>
+                        <li><a href="reference/financial-advisor/">financial-advisor</a> — Multi-agent financial workflows</li>
+                    </ul>
+                </section>
+            </div>
+
+            <aside>
+                
+
+                <div class="card" style="margin-top:16px">
+                    <h2>Quick links</h2>
+                    <ul class="clean links">
+                        <li><a href="reference/">Reference folder</a></li>
+                        <li><a href="projects/">Projects folder</a></li>
+                        <li><a href="archive/">Archive</a></li>
+                        <li><a href="styles.css">Styles</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer>

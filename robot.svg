@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256" aria-labelledby="robotTitle robotDesc" role="img">
+  <title id="robotTitle">Robot icon</title>
+  <desc id="robotDesc">A simple friendly robot face used as a site favicon</desc>
+  <!-- head -->
+  <rect x="8" y="10" width="48" height="36" rx="6" ry="6" fill="#2b2b2b"/>
+  <!-- antenna -->
+  <rect x="30" y="4" width="4" height="8" rx="2" ry="2" fill="#2b2b2b"/>
+  <circle cx="32" cy="4" r="1.8" fill="#ffcc00"/>
+  <!-- eyes -->
+  <circle cx="22" cy="26" r="4" fill="#ffffff"/>
+  <circle cx="42" cy="26" r="4" fill="#ffffff"/>
+  <circle cx="22" cy="26" r="2" fill="#2b2b2b"/>
+  <circle cx="42" cy="26" r="2" fill="#2b2b2b"/>
+  <!-- mouth -->
+  <rect x="20" y="34" width="24" height="4" rx="1" ry="1" fill="#ffcc00"/>
+  <!-- neck screws / detail -->
+  <circle cx="18" cy="18" r="1.2" fill="#ffcc00"/>
+  <circle cx="46" cy="18" r="1.2" fill="#ffcc00"/>
+</svg>
