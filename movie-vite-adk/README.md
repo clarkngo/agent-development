@@ -76,7 +76,7 @@ Prerequisites:
 ```bash
 cd movie-agent-server
 # Start the API server used by the client. This repository uses the ADK dev server command during development:
-adk api_server --port 9000 --alow_origins="*
+adk api_server --port 9000 --allow_origins="*"
 # (Or run your backend entrypoint / framework runner that binds to port 9000.)
 ```
 
