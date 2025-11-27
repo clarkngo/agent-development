@@ -1,0 +1,224 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Glassmorphism Container */
+.chat-root {
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 0;
+  background: rgba(30, 30, 35, 0.6);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  max-height: 800px;
+}
+
+/* Header */
+.chat-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.chat-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chat-title::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.header-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.toggle-label {
+  font-size: 0.85rem;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.toggle-checkbox {
+  accent-color: #646cff;
+}
+
+.reset-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #aaa;
+  padding: 0.4em 0.8em;
+  font-size: 0.85rem;
+}
+
+.reset-btn:hover {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+/* Chat Window */
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  scroll-behavior: smooth;
+}
+
+.chat-empty {
+  color: #666;
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* Messages */
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.chat-message.assistant {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.chat-role {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: #888;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.chat-text {
+  padding: 1rem;
+  border-radius: 12px;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-message.user .chat-text {
+  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+.chat-message.assistant .chat-text {
+  background: #2a2a30;
+  color: #e0e0e0;
+  border-bottom-left-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Input Area */
+.chat-controls {
+  padding: 1.5rem;
+  background: rgba(20, 20, 25, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.chat-controls textarea {
+  flex: 1;
+  background: #1a1a20;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.chat-controls textarea:focus {
+  border-color: #646cff;
+}
+
+.chat-actions button {
+  background: #646cff;
+  color: white;
+  font-weight: 600;
+  height: 50px;
+  padding: 0 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-actions button:hover:not(:disabled) {
+  background: #747bff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+}
+
+.chat-actions button:disabled {
+  background: #333;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.chat-actions .danger {
+  background: #ff4757;
+}
+
+.chat-actions .danger:hover {
+  background: #ff6b81;
+  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+}

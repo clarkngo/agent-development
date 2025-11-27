@@ -1,0 +1,8 @@
+{
+  "id": "movie-tool-agent",
+  "display_name": "Movie Tool Agent",
+  "description": "Agent exposing movie search and recommendation tools (A2A mode).",
+  "version": "0.1.0",
+  "entrypoint": "movie_tool_agent.agent:root_agent",
+  "permissions": ["run", "metadata"]
+}

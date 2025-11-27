@@ -1,0 +1,3 @@
+- agent-2-agent-brandonai-sampels: (https://github.com/bhancockio/agent2agent)[https://github.com/bhancockio/agent2agent]
+- google-adk-brandonai-samples: (https://github.com/bhancockio/agent-development-kit-crash-course))[https://github.com/bhancockio/agent-development-kit-crash-course]
+- google-adk-google-samples: (https://github.com/google/adk-samples/tree/main/python/agents)[https://github.com/google/adk-samples/tree/main/python/agents]
