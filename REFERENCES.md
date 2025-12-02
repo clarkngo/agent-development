@@ -1,4 +1,6 @@
-- agent-2-agent-brandonai-sampels: (https://github.com/bhancockio/agent2agent)[https://github.com/bhancockio/agent2agent]
+# References
+- a2a samples: (https://github.com/a2aproject/a2a-samples)[https://github.com/a2aproject/a2a-samples]
+- agent-2-agent-brandonai-samples: (https://github.com/bhancockio/agent2agent)[https://github.com/bhancockio/agent2agent]
 - google-adk-brandonai-samples: (https://github.com/bhancockio/agent-development-kit-crash-course))[https://github.com/bhancockio/agent-development-kit-crash-course]
 - google-adk-samples: (https://github.com/google/adk-samples/tree/main/python/agents)[https://github.com/google/adk-samples/tree/main/python/agents]
 - google-adk-python: (https://github.com/google/adk-python)[https://github.com/google/adk-python]
