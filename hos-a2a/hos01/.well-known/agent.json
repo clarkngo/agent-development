@@ -1,0 +1,49 @@
+{
+  "id": "hos01-movie-tool-agent",
+  "display_name": "HOS01 Movie Tool Agent",
+  "description": "A minimal A2A provider that answers movie-related lookup and summarization requests.",
+  "version": "0.1.0",
+  "entrypoint": "agent_executor:MovieAgentExecutor",
+  "contact": {
+    "name": "Clark",
+    "email": "you@example.com"
+  },
+  "skills": [
+    {
+      "id": "movie_lookup",
+      "name": "Movie Lookup",
+      "description": "Lookup basic metadata about a movie by title.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string", "description": "Movie title to look up" }
+        },
+        "required": ["title"]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "year": { "type": "string" },
+          "summary": { "type": "string" }
+        }
+      },
+      "examples": [
+        {
+          "input": { "title": "The Matrix" },
+          "output": { "title": "The Matrix", "year": "1999", "summary": "A hacker discovers..." }
+        }
+      ]
+    },
+    {
+      "id": "summarize_description",
+      "name": "Summarize Description",
+      "description": "Return a concise summary for a provided text snippet.",
+      "input_schema": { "type": "object", "properties": { "text": { "type": "string" } }, "required": ["text"] },
+      "output_schema": { "type": "object", "properties": { "summary": { "type": "string" } } },
+      "examples": [
+        { "input": { "text": "Long movie description..." }, "output": { "summary": "Short summary." } }
+      ]
+    }
+  ]
+}
