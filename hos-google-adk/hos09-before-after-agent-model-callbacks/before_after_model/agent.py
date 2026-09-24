@@ -147,7 +147,7 @@ def after_model_callback(
 # Create the Agent
 root_agent = LlmAgent(
     name="content_filter_agent",
-    model="gemini-2.0-flash",
+    model="gemini-3.6-flash",
     description="An agent that demonstrates model callbacks for content filtering and logging",
     instruction="""
     You are a helpful assistant.

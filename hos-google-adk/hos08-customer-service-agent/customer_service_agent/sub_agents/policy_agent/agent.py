@@ -3,7 +3,7 @@ from google.adk.agents import Agent
 # Create the policy agent
 policy_agent = Agent(
     name="policy_agent",
-    model="gemini-2.0-flash",
+    model="gemini-3.6-flash",
     description="Policy agent for the AI Developer Accelerator community",
     instruction="""
     You are the policy agent for the AI Developer Accelerator community. Your role is to help users

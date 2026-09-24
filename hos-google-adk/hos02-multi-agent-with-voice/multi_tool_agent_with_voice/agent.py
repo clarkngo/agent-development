@@ -56,7 +56,7 @@ def get_current_time(city: str) -> dict:
 
 root_agent = Agent(
     name="weather_time_agent",
-    model="gemini-live-2.5-flash-preview",
+    model="gemini-3.8-live",
     description=(
         "Agent to answer questions about the time and weather in a city."
     ),

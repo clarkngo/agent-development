@@ -91,7 +91,7 @@ def after_agent_callback(callback_context: CallbackContext) -> Optional[types.Co
 # Create the Agent
 root_agent = LlmAgent(
     name="before_after_agent",
-    model="gemini-2.0-flash",
+    model="gemini-3.6-flash",
     description="A basic agent that demonstrates before and after agent callbacks",
     instruction="""
     You are a friendly greeting agent. Your name is {agent_name}.

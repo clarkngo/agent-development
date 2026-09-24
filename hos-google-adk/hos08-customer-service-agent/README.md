@@ -78,7 +78,7 @@ The customer service agent routes queries to specialized sub-agents:
 ```python
 customer_service_agent = Agent(
     name="customer_service",
-    model="gemini-2.0-flash",
+    model="gemini-3.6-flash",
     description="Customer service agent for AI Developer Accelerator community",
     instruction="""
     You are the primary customer service agent for the AI Developer Accelerator community.

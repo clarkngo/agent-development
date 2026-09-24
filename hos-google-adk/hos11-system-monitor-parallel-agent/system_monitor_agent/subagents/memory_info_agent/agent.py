@@ -9,7 +9,7 @@ from google.adk.agents import LlmAgent
 from .tools import get_memory_info
 
 # --- Constants ---
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-3.6-flash"
 
 # Memory Information Agent
 memory_info_agent = LlmAgent(

@@ -6,10 +6,10 @@ from google.adk.models.lite_llm import LiteLlm
 
 # https://docs.litellm.ai/docs/providers/openrouter
 # model="openrouter/openai/gpt-4.1",
-# model="openrouter/anthropic/claude-3-5-sonnet",
+# model="openrouter/anthropic/claude-sonnet-5",
 
 model = LiteLlm(
-    model="openrouter/anthropic/claude-3-5-sonnet",
+    model="openrouter/anthropic/claude-sonnet-5",
     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
 )
 

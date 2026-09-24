@@ -155,7 +155,7 @@ def update_user_name(name: str, tool_context: ToolContext) -> dict:
 # Create a simple persistent agent
 memory_agent = Agent(
     name="memory_agent",
-    model="gemini-2.0-flash",
+    model="gemini-3.6-flash",
     description="A smart reminder agent with persistent memory",
     instruction="""
     You are a friendly reminder assistant that remembers users across conversations.

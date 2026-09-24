@@ -1,2 +1,2 @@
-google-adk[database]==1.6.1
-litellm==1.74.3
+google-adk[db]==2.9.2
+litellm==1.102.1

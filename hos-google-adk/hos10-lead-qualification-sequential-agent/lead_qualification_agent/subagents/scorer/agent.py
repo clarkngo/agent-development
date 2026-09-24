@@ -8,7 +8,7 @@ based on various criteria.
 from google.adk.agents import LlmAgent
 
 # --- Constants ---
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-3.6-flash"
 
 # Create the scorer agent
 lead_scorer_agent = LlmAgent(
