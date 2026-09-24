@@ -3,7 +3,7 @@ from google.adk.agents import Agent
 # Create the course support agent
 course_support_agent = Agent(
     name="course_support",
-    model="gemini-2.0-flash",
+    model="gemini-3.6-flash",
     description="Course support agent for the AI Marketing Platform course",
     instruction="""
     You are the course support agent for the Fullstack AI Marketing Platform course.

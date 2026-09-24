@@ -7,7 +7,7 @@ This agent generates the initial LinkedIn post before refinement.
 from google.adk.agents.llm_agent import LlmAgent
 
 # Constants
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-3.6-flash"
 
 # Define the Initial Post Generator Agent
 initial_post_generator = LlmAgent(
